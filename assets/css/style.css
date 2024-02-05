@@ -28,7 +28,7 @@ body{
   font-family: 'Lato', sans-serif;
 
   /* BG */
-  /* background: linear-gradient(to bottom, #009688 50%, #D6DBD8 50%); */
+  background: linear-gradient(to bottom, #009688 0%,#009688 15%, #DADBD4 15%, #DADBD4 85%);
   background-color: #D6DBD8;
   height: 100vh;
 }
