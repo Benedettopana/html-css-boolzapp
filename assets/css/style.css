@@ -24,13 +24,19 @@
   background-color: rgba(255, 0, 0, 0.3);
 }
 
+
+
 body{
   font-family: 'Lato', sans-serif;
 
   /* BG */
   background: linear-gradient(to bottom, #009688 0%,#009688 15%, #DADBD4 15%, #DADBD4 85%);
-  background-color: #D6DBD8;
+  /* background-color: #D6DBD8; */
   height: 100vh;
+}
+
+.night-mode{
+  background: linear-gradient(to bottom, #009688 0%,#009688 15%, #0D1117 15%, #0D1117 85%);
 }
 
 /* img{
@@ -112,7 +118,7 @@ body{
   position: absolute;
   left: 2px;
   width: 200px;
-  height: 60px;
+  height: 120px;
   font-size: 1.1rem;
   line-height: 1.7rem;
   padding: 5px;
