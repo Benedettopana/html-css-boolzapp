@@ -1,6 +1,8 @@
 /* ROOT */
 :root{
   --dark-grey: #EAEAEA;
+  --send: #D5F9BA;
+  --received: #FFF;
 }
 
 /* RESET */
@@ -112,7 +114,24 @@ nav ul li{
 
 /* CHAT */
 .chat{
-  
+  background-image: url(../img/mine.jpg);
+  background-size: cover;
+}
+
+.message{
+  width: 40%;
+  margin: 5px 90px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.send{
+  background-color: var(--send);
+  align-self: self-end;
+}
+
+.received{
+  background-color: var(--received);
 }
 /* /CHAT */
 /* /chat attiva (parte destra) */
