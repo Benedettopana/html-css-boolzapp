@@ -1,5 +1,123 @@
+/* ROOT */
+:root{
+  --dark-grey: #EAEAEA;
+}
+
+/* RESET */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+.debug{
+  border: 1px solid black;
+}
+
+.debug-bg{
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+
+  /* BG */
+  /* background: linear-gradient(to bottom, #009688 50%, #D6DBD8 50%); */
+  background-color: #D6DBD8;
+}
+
+img{
+  max-width: 100%;
+}
+
+/* UTILITY */
+.d-flex{
+  display: flex;
+}
+
+.s-between{
+  justify-content: space-between;
+}
+
+.al-center{
+  align-items: center;
+}
+
+.center{
+  justify-content: center;
+}
+
+.column{
+  flex-direction: column;
+}
+
+.margin-l{
+  margin-left: 10px;
+}
+
+.margin-b{
+  margin-bottom: 50px;
+}
+/* /UTILITY */
+
+.container{
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.history,
+.chat-active{
+  height: 100%;
+}
+
+/* chat history (parte sinistra) */
+.history{
+  width: 30%;
+}
+
+/* /chat history (parte sinistra) */
+
+/* chat attiva (parte destra) */
+.chat-active{
+  width: 70%;
+}
+
+.top-screen{
+  background-color: var(--dark-grey);
+  max-height: 70px;
+}
+
+/* INFO */
+.profile{
+  
+}
+
+.profile .photo img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* /INFO */
+/* Azioni */
+nav ul{
+  list-style: none;
+  margin: 0 5px;
+}
+
+nav ul li{
+  list-style: none;
+}
+/* /Azioni */
+
+/* CHAT */
+.chat{
+  
+}
+/* /CHAT */
+/* /chat attiva (parte destra) */
+
+/* ***************************************************
+                    RESPONSIVE
+******************************************************/
+
