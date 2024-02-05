@@ -164,6 +164,13 @@ body{
   margin-right: 15px;
 }
 
+.banner .under{
+  font-size: .9rem;
+  text-decoration: underline;
+  color: #517889;
+  font-weight: bold;
+}
+
 .search{
   height: 50px;
   width: 100%;
