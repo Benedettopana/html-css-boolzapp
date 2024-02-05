@@ -62,6 +62,14 @@ body{
   flex-direction: column;
 }
 
+.al-end{
+  align-items: flex-end;
+}
+
+.j-end{
+  justify-content: flex-end;
+}
+
 .margin-l{
   margin-left: 10px;
 }
@@ -72,6 +80,10 @@ body{
 
 .margin-b{
   margin-bottom: 50px;
+}
+
+.margin-t{
+  margin-top: 30px;
 }
 
 .padding-banner{
@@ -87,6 +99,36 @@ body{
 }
 /* /UTILITY */
 
+.chevron{
+  font-size: .8rem;
+  color: var(--text-preview);
+}
+
+.azione{
+  position: relative;
+}
+
+.pop{
+  position: absolute;
+  left: 2px;
+  width: 200px;
+  height: 60px;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  padding: 5px;
+  color: white;
+  background-color: var(--text-preview);
+  display: none;
+  border-radius: 10px;
+}
+
+.chat .message .azione:hover .pop{
+  display: block;
+}
+
+.little{
+  font-size: .6rem;
+}
 .container{
   max-width: 1300px;
   margin: 20px auto;
