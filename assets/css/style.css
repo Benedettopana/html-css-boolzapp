@@ -6,6 +6,7 @@
   --type-bar: #F3EEEA;
   --banner-color: #8EDAFC;
   --text-preview: #B6B9BB;
+  --text-bar: #6B7376;
 }
 
 /* RESET */
@@ -137,7 +138,8 @@ body{
   padding: 2px 25px;
 }
 
-.search .box .input input{
+.search .box .input input,
+.chat-active .type .text input{
   font-family: 'Lato', sans-serif;
   font-size: .9rem;
   font-weight: bold;
@@ -147,6 +149,12 @@ body{
   width: 300px;
   color: #CCC;
 }
+
+.chat-active .type .text input{
+  background-color: white;
+}
+
+
 
 /* contatti */
 .contact{
@@ -193,8 +201,6 @@ body{
   margin-right: 15px;
 }
 
-
-
 .profile .photo img{
   width: 50px;
   height: 50px;
@@ -225,7 +231,7 @@ body{
 .chat{
   background-image: url(../img/mine.jpg);
   background-size: cover;
-  max-height: 640px;
+  max-height: 610px;
   overflow-x: hidden; /* Hide horizontal scrollbar */
   overflow-y: scroll;
 }
@@ -246,11 +252,31 @@ body{
 .received{
   background-color: var(--received);
 }
+/* barra sotto */
 
 .type{
   background-color: var(--type-bar);
   width: 100%;
+  height: 70px;
+  font-size: 1.5rem;
+  padding: 5px 10px;
 }
+
+.type .icon{
+  width: 8%;
+  text-align: center;
+  color: var(--text-bar);
+}
+
+.type .text{
+  padding: 5px 10px;
+  width: 80%;
+  height: 50px;
+  background-color: white;
+  border-radius: 5px;
+  
+}
+/* /barra sotto */
 /* /CHAT */
 /* /chat attiva (parte destra) */
 
