@@ -3,6 +3,7 @@
   --dark-grey: #EAEAEA;
   --send: #D5F9BA;
   --received: #FFF;
+  --type-bar: #F3EEEA;
 }
 
 /* RESET */
@@ -39,6 +40,10 @@ img{
 
 .s-between{
   justify-content: space-between;
+}
+
+.s-around{
+  justify-content: space-around;
 }
 
 .al-center{
@@ -113,9 +118,13 @@ nav ul li{
 /* /Azioni */
 
 /* CHAT */
+
+/* TODO: Mettere scroll FIGO */
 .chat{
   background-image: url(../img/mine.jpg);
   background-size: cover;
+
+  overflow: scroll;
 }
 
 .message{
@@ -133,6 +142,11 @@ nav ul li{
 .received{
   background-color: var(--received);
 }
+
+.type{
+  background-color: var(--type-bar);
+  width: 100%;
+}
 /* /CHAT */
 /* /chat attiva (parte destra) */
 
@@ -140,3 +154,14 @@ nav ul li{
                     RESPONSIVE
 ******************************************************/
 
+/* Tablet */
+@media screen (max-width:992px){
+  
+}
+/* /Tablet */
+
+/* smartphone */
+@media screen (max-width:540px){
+  
+}
+/* /smartphone */
