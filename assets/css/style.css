@@ -30,6 +30,7 @@ body{
   /* BG */
   /* background: linear-gradient(to bottom, #009688 50%, #D6DBD8 50%); */
   background-color: #D6DBD8;
+  height: 100vh;
 }
 
 /* img{
@@ -89,12 +90,14 @@ body{
 .container{
   max-width: 1300px;
   margin: 20px auto;
+  height: 80vh;
 }
 
 .history,
 .chat-active{
   /* height: 100%; */
-  aspect-ratio: 1/0.5;
+  height: 80vh;
+  /* aspect-ratio: 1/0.5; */
 }
 
 /* chat history (parte sinistra) */
@@ -158,20 +161,19 @@ body{
 
 /* contatti */
 .contact{
-  /* height: calc(100% - 200px); */
-  max-height: 550px;
+  height: calc(100% - 200px);
+  /* max-height: 550px; */
+  
   width: 100%;
   overflow-x: hidden; /* Hide horizontal scrollbar */
   overflow-y: scroll;
+  background-color: white;
 }
 
 .contact .person{
   background-color: white;
+  border-bottom: 1px solid var(--type-bar);
 }
-
-/* .contact .person .ora{
-  margin-left: 90px;
-} */
 
 .contact .person span{
   
@@ -185,6 +187,7 @@ body{
 /* chat attiva (parte destra) */
 .chat-active{
   width: 70%;
+  height: 80vh;
 }
 
 .top-screen{
@@ -231,7 +234,7 @@ body{
 .chat{
   background-image: url(../img/mine.jpg);
   background-size: cover;
-  max-height: 610px;
+  height: calc(100% - 140px);
   overflow-x: hidden; /* Hide horizontal scrollbar */
   overflow-y: scroll;
 }
@@ -285,13 +288,72 @@ body{
 ******************************************************/
 
 /* Tablet */
-@media screen (max-width:992px){
-  
+@media screen and (max-width: 992px){
+  .container{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .container .history{
+    width: 12%;
+  }
+
+  .container .chat-active{
+    width: 88%;
+  }
+
+  .history .top-screen .azioni-chat,
+  .history .banner,
+  .history .search,
+  .history .contact .person .profile .info,
+  .history .contact .person .ora{
+    display: none;
+  }
+
+  /* .history{
+    height: 100vh;
+  } */
+
+  .history .contact,
+  .chat-active {
+    height: 100vh;
+
+  }
+
+  .chat-active .chat{
+    height: calc(100vh - 132px);
+  }
+
+  .container .chat-active .chat .message{
+      width: 60%;
+      margin: 5px 40px;
+      padding: 10px 20px;
+      border-radius: 20px;
+  }
 }
 /* /Tablet */
 
 /* smartphone */
-@media screen (max-width:540px){
-  
+@media screen and (max-width: 540px){
+  .container .row .history{
+    display: none;
+  }
+
+  .container .row .chat-active{
+    width: 100vh;
+    height: 100vh;
+  }
+
+  .container .row .chat-active .top-screen .azioni-chat.close{
+    display: none;
+  }
+
+  .container .chat-active .chat .message{
+    width: 70%;
+    margin: 5px 40px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
 }
 /* /smartphone */
