@@ -21,7 +21,7 @@
       <div class="row d-flex  ">
         <!-- parte di sinistra con le chat -->
         <section class="history  ">
-          <div class="top-screen d-flex s-between  ">
+          <div class="top-screen d-flex s-between padding-header ">
             <div class="profile margin-l">
               <!-- img profilo -->
               <div class="photo">
@@ -30,14 +30,12 @@
             </div>
             <!-- /sinistra header chat-->
             <!-- destra header chat -->
-            <div class="azioni-chat margin-l  ">
-              <nav>
-                <ul class="d-flex">
-                  <li>icon</li>
-                  <li>icon</li>
-                  <li>icon</li>
-                </ul>
-              </nav>
+            <div class="azioni-chat margin-l d-flex s-around al-center">
+
+              <!-- icone -->
+              <i class="fa-solid fa-circle-notch"></i>
+              <i class="fa-solid fa-message"></i>
+              <i class="fa-solid fa-ellipsis-vertical big"></i>
             </div>
           </div>
 
@@ -58,9 +56,13 @@
           <!-- /Banner -->
 
           <!-- Search bar -->
-          <div class="search  ">
-            <div class="icon"></div>
-            <div class="input"></div>
+          <div class="search">
+            <div class="box d-flex">
+              <div class="icon margin-r"><i class="fa-solid fa-magnifying-glass"></i></div>
+              <div class="input">
+                <input type="text" id="cerca" name="name" placeholder="Cerca o inizia una nuova chat"/>
+              </div>
+            </div>
           </div>
           <!-- /Search bar -->
 
@@ -235,9 +237,9 @@
 
         <!-- parte destra con la chat in primo piano -->
         <section class="chat-active  ">
-          <div class="top-screen d-flex s-between  ">
+          <div class="top-screen d-flex s-between border padding-header">
             <!-- sinistra header chat-->
-            <div class="profile d-flex  ">
+            <div class="profile d-flex margin-l ">
               <div class="photo">
                 <img src="./assets/img/avatar_1.jpg" alt="avatar-1">
               </div>
@@ -248,21 +250,17 @@
             </div>
             <!-- /sinistra header chat-->
             <!-- destra header chat -->
-            <div class="azioni-chat  ">
-              <nav>
-                <ul class="d-flex">
-                  <li>icon</li>
-                  <li>icon</li>
-                  <li>icon</li>
-                </ul>
-              </nav>
+            <div class="azioni-chat close d-flex s-around al-center ">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-paperclip"></i>
+              <i class="fa-solid fa-ellipsis-vertical big"></i>
             </div>
             <!-- /destra header chat -->
 
           </div>
           <!-- CHAT -->
           
-          <div class="chat d-flex column    -bg">
+          <div class="chat d-flex column">
               <div class="message send">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est illum sapiente sequi perspiciatis, repellat voluptate asperiores possimus explicabo consectetur a sunt temporibus amet optio dolorem eius animi deleniti exercitationem? Ratione.
               </div>
@@ -285,7 +283,7 @@
             
           </div>
 
-          <div class="type d-flex s-around  ">
+          <div class="type d-flex s-around border">
             <div class="icon"></div>
             <div class="text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo adipisci velit est error, at laboriosam. Fugiat soluta aut voluptates maiores accusantium perspiciatis facere, cupiditate modi adipisci mollitia ipsum quisquam amet?
