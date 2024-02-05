@@ -4,6 +4,8 @@
   --send: #D5F9BA;
   --received: #FFF;
   --type-bar: #F3EEEA;
+  --banner-color: #8EDAFC;
+  --text-preview: #B6B9BB;
 }
 
 /* RESET */
@@ -62,8 +64,16 @@ img{
   margin-left: 10px;
 }
 
+.margin-r{
+  margin-right: 20px;
+}
+
 .margin-b{
   margin-bottom: 50px;
+}
+
+.padding-banner{
+  padding: 18px 20px;
 }
 /* /UTILITY */
 
@@ -74,13 +84,66 @@ img{
 
 .history,
 .chat-active{
-  height: 100%;
+  /* height: 100%; */
+  aspect-ratio: 1/0.5;
 }
 
 /* chat history (parte sinistra) */
 .history{
   width: 30%;
 }
+
+.banner,
+.contact .person{
+  background-color: var(--banner-color);
+  height: 80px;
+  width: 100%;
+  
+}
+
+
+.banner .icon-bell{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  text-align: center;
+  padding-top: 11px;
+  background-color: white;
+  color: var(--banner-color);
+  margin-right: 15px;
+}
+
+/* TODO: 40px+5 margin */
+.search{
+  height: 50px;
+  width: 100%;
+  background-color: var(--dark-grey);
+}
+
+/* contatti */
+.contact{
+  /* height: calc(100% - 200px); */
+  max-height: 550px;
+  width: 100%;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: scroll;
+}
+
+.contact .person{
+  background-color: white;
+}
+
+.contact .person .ora{
+  margin-left: 90px;
+}
+
+.contact .person span{
+  
+  font-size: .9rem;
+  color: var(--text-preview);
+}
+/* /contatti */
 
 /* /chat history (parte sinistra) */
 
@@ -95,6 +158,10 @@ img{
 }
 
 /* INFO */
+/* FIXME: Fixare barra */
+.chat-active .contact{
+  overflow-y: hidden;
+}
 .profile{
   
 }
@@ -119,13 +186,14 @@ nav ul li{
 
 /* CHAT */
 
-/* TODO: Mettere scroll FIGO */
 .chat{
   background-image: url(../img/mine.jpg);
   background-size: cover;
-
-  overflow: scroll;
+  max-height: 640px;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: scroll;
 }
+
 
 .message{
   width: 40%;
