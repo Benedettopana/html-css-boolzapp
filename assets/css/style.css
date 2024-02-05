@@ -134,9 +134,9 @@ img{
   background-color: white;
 }
 
-.contact .person .ora{
+/* .contact .person .ora{
   margin-left: 90px;
-}
+} */
 
 .contact .person span{
   
@@ -162,8 +162,8 @@ img{
 .chat-active .contact{
   overflow-y: hidden;
 }
-.profile{
-  
+.profile .photo{
+  margin-right: 15px;
 }
 
 .profile .photo img{
