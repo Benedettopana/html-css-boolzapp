@@ -119,10 +119,21 @@ body{
   background-color: var(--text-preview);
   display: none;
   border-radius: 10px;
+  text-align: center;
+  /* ombra box */
+  box-shadow: 5px 5px 7px 2px lightgray;
+  cursor: pointer;
 }
+
 
 .chat .message .azione:hover .pop{
   display: block;
+}
+
+.chat .message .azione .pop p:hover{
+  background-color: white;
+  color: var(--text-preview);
+  border-radius: 10px;
 }
 
 .little{
